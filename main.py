@@ -28,6 +28,9 @@ import issue_redirect
 import os
 from dotenv import load_dotenv
 
+# Hide all warnings
+warnings.filterwarnings("ignore")
+
 load_dotenv()
 
 GROQ_API_KEY = os.getenv('GROQ_API_KEY')
